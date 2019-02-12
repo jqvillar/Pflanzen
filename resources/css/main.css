@@ -13,6 +13,11 @@ nav{
 
 nav > div > ul > li{
   padding-right: 20%;
+  padding-top: 5%;
+}
+
+.navbar-toggler{
+  border-color: rgba(0,0,0,0) !important;
 }
 
 section{
