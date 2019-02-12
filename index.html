@@ -4,30 +4,85 @@
     <meta charset="utf-8">
     <title>Pflanzen</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./resources/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="sticky">
-      <ul class="main-nav">
-        <li><img src="" alt="Logo"></li>
-        <div class="inline-flex-justify-space-around nav-link-group">
-          <li class="nav-link"><a href="#about">Plants</a></li>
-          <li class="nav-link"><a href="#experience">Story</a></li>
-          <li class="nav-link"><a href="#">Contact</a></li>
-        </div>
-      </ul>
-      <!--Hide hamburger for lager screens and show for smaller screens-->
-      <ul class="nav-hamburger"></ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#plants">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#story">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <section class="cover">
-      <h2>Meine Pflanzen</h2>
-      <h4>Let me introduce you to the plants I take care of every day</h4>
-      <h1 style="width: 100%; text-align: center;"><i class="fas fa-chevron-down"></i></h1>
+
+    <section class="cover jumbotron jumbotron-fluid d-flex flex-column justify-content-end align-items-end">
+      <div class="container-fluid">
+        <h2>PFLANZEN</h2>
+        <p>Let me introduce you to my plants</p>
+        <h4 style="width: 100%; text-align: center;"><i class="fas fa-chevron-down"></i></h4>
+      </div>
     </section>
-    <section class="quote">
-      <h1>A tribute to meine Pflanzen</h1><br/>
-      <p>A simple page to practice my German and to write about my only children.</p>
+
+    <section id="plants" class="quote container-fluid d-flex flex-column justify-content-center align-items-center">
+      <div class="content">
+        <h1 class="text-center">Meine Pflanzen</h1>
+        <p>This is a simple practice website that I dedicate to my plants.
+        In the moment the only things I could think of putting on a website are my plants.
+        I also decided to naem the website "Meine Pflanzen" because I'm taking German and I thought it was just
+        good practice too.
+      </p>
+      </div>
     </section>
+
+    <section class="tri-img-gallery">
+      <div class="img-wrapper tall-item">
+        <img class="img-fluid" src="./resources/img/cactuspink.jpg" alt="">
+      </div>
+      <div class="img-wrapper">
+        <img class="img-fluid" src="./resources/img/snakeblue.jpg" alt="">
+      </div>
+      <div class="img-wrapper">
+        <img class="img-fluid" src="./resources/img/plantsalmon.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="story" class=" container-fluid d-flex flex-column justify-content-center align-items-center">
+      <div class="content">
+        <h1 class="text-center">Plant Story</h1>
+        <p>To be honest I wasn't very fond of plants.
+          However, after I purchased my first plant - funny enough it was from the plant shop -
+          I couldn't get enough. After seeing my first plant grow so rapidly I knew I was ready for more.
+          Now I currently have six I'm taking care of. I know it's not a lot, but for someone like me it defintately is.
+        </p>
+      </div>
+    </section>
+
+    <section class="divider-img">
+      <div class="img-wrapper">
+        <img class="img-fluid" src="./resources/img/succulantwhite.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="contact" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+      <h1>Keep in Touch</h1>
+      <p>I you want to know more about the progress of my plants or just want to chat feel free to contact me</p>
+    </section>
+
   </body>
 </html>

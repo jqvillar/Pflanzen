@@ -1,54 +1,82 @@
-/* Commonly used display classes for layout */
-.inline-flex-justify-space-around{
-  display:inline-flex;
-  justify-content: space-around;
+h1,h2,h3,h4{
+  font-family: NunitoSans;
 }
 
-/* NAV */
-.main-nav{
-  background: #c0c2ce;
-  display: flex;
-  padding: 25px 10%;
+p,a{
+  font-family: NunitoSans-L;
 }
 
-.main-nav > .nav-link-group{
-  margin-left: auto;
-  width: 20vw;
+nav{
+  padding: 0 10% !important;
+}
+nav > div > ul > li{
+  padding-right: 20%;
 }
 
-.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
+section{
+  padding: 2% 10%;
 }
 
-a{
-  text-decoration: none;
-}
-
-.nav-hamburger{
-  display: none;
-}
-
-/* COVER */
 .cover{
-  background-color: #f8f8fa;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.cover > h4 {/*push the text up*/
-  margin-bottom: 5%;
+  padding: 5% 10%;
+  background-image: url(../img/greenhouse.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
-/*QUOTES*/
-.quote{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10%;
+.img-wrapper{
+  width: auto;
+  height: 100%;
+}
+
+.content{
+  width: 35%;
+}
+
+.tri-img-gallery > div > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tri-img-gallery{
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: auto auto;
+}
+
+.tall-item {
+  grid-area: 1 / 1 / span 2/ span 1;
+}
+
+@media only screen and (min-width: 1024px){
+
+}
+@media only screen and (min-width: 900px){
+}
+
+@media (max-width: 600px) {/*for phone only*/
+  .tri-img-gallery{
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .tall-item {
+    grid-area: 1 / 1 / span 1/ span 1;
+  }
+
+}
+
+@font-face{
+    font-family: NunitoSans;
+    src: url(fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: NunitoSans-L;
+    src: url(fonts/NunitoSans-Light.ttf);
 }
