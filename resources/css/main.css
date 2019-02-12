@@ -1,0 +1,54 @@
+/* Commonly used display classes for layout */
+.inline-flex-justify-space-around{
+  display:inline-flex;
+  justify-content: space-around;
+}
+
+/* NAV */
+.main-nav{
+  background: #c0c2ce;
+  display: flex;
+  padding: 25px 10%;
+}
+
+.main-nav > .nav-link-group{
+  margin-left: auto;
+  width: 20vw;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav-hamburger{
+  display: none;
+}
+
+/* COVER */
+.cover{
+  background-color: #f8f8fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.cover > h4 {/*push the text up*/
+  margin-bottom: 5%;
+}
+
+/*QUOTES*/
+.quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+}
