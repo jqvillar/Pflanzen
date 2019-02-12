@@ -8,13 +8,15 @@ p,a{
 
 nav{
   padding: 0 10% !important;
+  background-color: rgba(251, 250, 248, 0.7);
 }
+
 nav > div > ul > li{
   padding-right: 20%;
 }
 
 section{
-  padding: 2% 10%;
+  padding: 4% 10%;
 }
 
 .cover{
@@ -29,10 +31,6 @@ section{
 .img-wrapper{
   width: auto;
   height: 100%;
-}
-
-.content{
-  width: 35%;
 }
 
 .tri-img-gallery > div > img {
@@ -51,25 +49,6 @@ section{
   grid-area: 1 / 1 / span 2/ span 1;
 }
 
-@media only screen and (min-width: 1024px){
-
-}
-@media only screen and (min-width: 900px){
-}
-
-@media (max-width: 600px) {/*for phone only*/
-  .tri-img-gallery{
-    display: grid;
-    grid-column-gap: 0px;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-
-  .tall-item {
-    grid-area: 1 / 1 / span 1/ span 1;
-  }
-
-}
 
 @font-face{
     font-family: NunitoSans;
